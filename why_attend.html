@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="CX-Loyalty_img.png" type="image/x-icon">
+    <title>Why Attend?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+        background-image: url("/modern_img.jpg/");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    /*nav */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: auto;
+        padding:  1rem;
+        background-color: skyblue;
+        backdrop-filter: blur(10px);
+        border-radius: 0rem;
+        margin-top: 1rem;
+        /* box-shadow: 0px 0px 3px rgb(254 116 62); */
+    }
+    nav  .logo img {
+        background-size: auto;
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+   
+    ul {
+        list-style-type: none;
+        margin: 0px ;
+        padding: 0;
+        padding: 0px;
+        background-color: transparent;
+        overflow: hidden;
+        margin-bottom: 0;
+        width: 100%;
+        float: right;
+        font-weight: 800;
+        font-size: 20px;
+        justify-items: flex-start;
+        margin-left: -100px;
+        padding-left: -80px;
+    }
+
+
+    li {
+        padding: 0rem 1rem;
+        float: left;
+    }
+
+    li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .5px;
+        margin-left: -10px;
+    
+    }
+
+    ul li a {
+        position: relative;
+    }
+
+    ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    /* Center Animation */
+    ul li a::before {
+        transform: scale(0, 1);
+        transition: transform .3s ease;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1, 1);
+    }
+    li a.active,
+    li a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+.container{
+    background-image: url('backgroundimg3.jpg');
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.container-1 img{
+    width: 50%;
+    height:50%;
+    padding: 50px;
+    float: left;
+
+}
+.container-1 p{
+    float: right;
+    text-align: right;
+    padding: 100px;
+    margin: 100px;
+   font-size: 25px;
+   font-weight: 100;
+   
+}
+.container-2 h4{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right:50px;
+    font-size: 40px;
+    font-weight: 100;
+}
+.container-3 p{
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 100px;
+    margin: 20px;
+    list-style: disc;
+    margin-bottom: 20px;
+
+}
+
+.container-1 h1{
+    text-align: center;
+    color: orangered;
+    padding-top: 20px;
+}
+
+
+    @media only screen and (max-width:1024px) {
+        nav {
+            max-width: 98%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        html {
+            font-size: 80%;
+        }
+
+        nav {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        html {
+            font-size: 85%;
+        }
+
+        header {
+            height: 100vh;
+        }
+
+        li {
+            padding: 1rem 1.1rem;
+        }
+
+        .menu {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        ul {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            top: 4rem;
+            left: -50%;
+            background-color: #000000b5;
+            backdrop-filter: blur(10px);
+        }
+
+        #click:checked~ul {
+            left: 0%;
+            transition: all 0.3s ease;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="CX-Loyalty_img.png" alt="image">
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="overview.html" class="active">Home</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="who_will_you_meet.html">Who Will You Meet?</a></li>
+                <li><a href="target_industries.html">Target Industries</a></li>
+                <li><a href="why_attend.html">Why Attend?</a></li>
+                <li><a href="top_highlights.html">Topic Highlights</a></li>
+                <li><a href="why_sponsor.html">Why Sponsor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="container-1">
+            <h1>WHY ATTEND?</h1>
+            <img src="whyimg.jpg" />
+            <p><b>   
+                The 2nd Annual CX & Loyalty Summit MENA 2023</b> will bring together senior industry professionals across all industries and verticals to talk all things CX, EX, Loyalty, Customer Service, Digital Trends and much more. The Summit will explore emerging CX strategies, the latest technologies – Digital, Automation and best practices that will keep your organization at the forefront of CX, EX & CL excellence. Delegates will experience a power-packed agenda consisting of presentations, panel discussions and keynotes from globally renowned speakers, panelists, and moderators. At the event, you will have the opportunity to network with and gain knowledge from industry specialists from <style="margin-left:-40px">around the globe and form partnerships with these specialists.</style></p>
+        </div>
+    <div class="container-2">
+    
+        <h4>At 2nd Annual CX & Loyalty Summit MENA 2023</b>, you’ll hear the most innovative approaches that the world’s leading organizations are deploying to manage customer interactions and maximize customer value. If you are ready to innovate and join the ranks of the biggest innovators while resonating with the following reasons compelling enough.<br> register today:
+        </h4>
+    </div>
+ 
+    <div class="container-3">
+            <p>Gain Knowledge and Insights from Top Industry Leaders and Experts from across the globe</p>
+            <p>Network with Industry Peers in a solution-oriented environment</p>
+            <p>Discuss Significant Partnerships and Collaborations with Industry leaders</p>
+            <p>Deep Dive into Insights derived from real-time case studies</p>
+            <p>Build Industry Ecosystem Collaboration to address latest challenges</p>
+    </div>
+    </div>
+</body>
+</html>

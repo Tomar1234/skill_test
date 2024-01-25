@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="CX-Loyalty_img.png" type="image/x-icon">
+    <title>Why Sponsor?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+        background-image: url("/modern_img.jpg/");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    /*nav */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: auto;
+        padding:  1rem;
+        background-color: skyblue;
+        backdrop-filter: blur(10px);
+        border-radius: 0rem;
+        margin-top: 1rem;
+        /* box-shadow: 0px 0px 3px rgb(254 116 62); */
+    }
+    nav  .logo img {
+        background-size: auto;
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0px ;
+        padding: 0;
+        padding: 0px;
+        background-color: transparent;
+        overflow: hidden;
+        margin-bottom: 0;
+        width: 100%;
+        float: right;
+        font-weight: 800;
+        font-size: 20px;
+        justify-items: flex-start;
+        margin-left: -100px;
+    }
+
+    li {
+        padding: 0rem 1rem;
+        float: left;
+    }
+
+    li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .5px;
+        margin-left: -10px;
+    }
+
+    ul li a {
+        position: relative;
+    }
+
+    ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    /* Center Animation */
+    ul li a::before {
+        transform: scale(0, 1);
+        transition: transform .3s ease;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1, 1);
+    }
+    li a.active,
+    li a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+.container-1 {
+    background-image: url('backgroundimg3.jpg');
+    background-color: transparent;
+    width: 100%
+    height: 8%;
+
+}
+.container-1 h1{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    color: orangered;
+}
+.container-1 p{
+    font-size: 25px;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.container-1 a{
+    color: purple;
+}
+
+
+
+
+
+
+    @media only screen and (max-width:1024px) {
+        nav {
+            max-width: 98%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        html {
+            font-size: 80%;
+        }
+
+        nav {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        html {
+            font-size: 85%;
+        }
+
+        header {
+            height: 100vh;
+        }
+
+        li {
+            padding: 1rem 1.1rem;
+        }
+
+        .menu {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        ul {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            top: 4rem;
+            left: -50%;
+            background-color: #000000b5;
+            backdrop-filter: blur(10px);
+        }
+
+        #click:checked~ul {
+            left: 0%;
+            transition: all 0.3s ease;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="CX-Loyalty_img.png" alt="image">
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="overview.html" class="active">Home</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="who_will_you_meet.html">Who Will You Meet?</a></li>
+                <li><a href="target_industries.html">Target Industries</a></li>
+                <li><a href="why_attend.html">Why Attend?</a></li>
+                <li><a href="top_highlights.html">Topic Highlights</a></li>
+                <li><a href="why_sponsor.html">Why Sponsor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-1">
+        <h1>WHY SPONSOR</h1><br>
+        <p><b>2nd Annual CX & Loyalty Summit MENA 2023</b>, presents the perfect opportunity for solution providers to engage with key decision-makers such as ,CXOs,Heads of Marketing, Heads of Customer Experience, Heads of Loyalty Programs, etc., from diverse industries such as <br> BFSI, Retail & E-Commerce, Telco, Hospitality, Travel & Tourism, Aviation, CPG, etc.,<br> to differentiate their product and put forward their value proposition in this crowded marketplace. Some of the key reasons why you should sponsor:</p>
+
+           <h1>Demonstrate Thought Leadership</h1>
+                    <p>Position your company as a thought leader by delivering a standalone presentation or moderating a panel discussion to a pre-qualified audience comprising of decision makers.</p>
+                
+                <h1>Network & Generate Leads</h1> 
+                <p>Optimize your networking opportunities by getting right in front of key decision makers that are prequalified based on seniority, budget availability and motivation to learn about latest technologies
+                </p>
+                
+                <h1>Brand Positioning</h1>
+                <p>Establish, strengthen and re-position your brand in front of CMOs, Heads of CX & Loyalty who are looking to re-align and strengthen their CX &amp; Loyalty strategies
+                </p>
+
+                <h1 align="center"><b>Are you interested to sponsor our event?</b></h1>
+                <p>To find out more about the ROI-driven sponsorship and exhibition opportunities,<br>
+                    Contact us now at:  +971 4 243 4677 Or<br>
+                 Email: <a href="info@verve-management.com" color="orangered">info@verve-management.com</a>
+                    </p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="CX-Loyalty_img.png" type="image/x-icon">
+    <title>Target Industries</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+        background-image: url("/modern_img.jpg/");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    /*nav */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: auto;
+        padding:  1rem;
+        background-color: skyblue;
+        backdrop-filter: blur(10px);
+        border-radius: 0rem;
+        margin-top: 1rem;
+        /* box-shadow: 0px 0px 3px rgb(254 116 62); */
+    }
+    nav  .logo img {
+        background-size: auto;
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0px ;
+        padding: 0;
+        padding: 0px;
+        background-color: transparent;
+        overflow: hidden;
+        margin-bottom: 0;
+        width: 100%;
+        float: right;
+        font-weight: 800;
+        font-size: 20px;
+        justify-items: flex-start;
+        margin-left: -100px;
+        padding-left: -80px;
+    }
+
+    li {
+        padding: 0rem 1rem;
+        float: left;
+    }
+
+    li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .5px;
+        margin-left: -10px;
+    }
+
+    ul li a {
+        position: relative;
+    }
+
+    ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    /* Center Animation */
+    ul li a::before {
+        transform: scale(0, 1);
+        transition: transform .3s ease;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1, 1);
+    }
+    li a.active,
+    li a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+.container-1{
+    background-image: url('backgroundimg3.jpg');
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.container-1 h1{
+    text-align: center;
+    color: orangered;
+    padding-top: 50px;
+}
+.container-1 p{
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.container-1 i{
+    text-align: center;
+    size: 20px;
+}
+
+
+
+
+
+
+    @media only screen and (max-width:1024px) {
+        nav {
+            max-width: 98%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        html {
+            font-size: 80%;
+        }
+
+        nav {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        html {
+            font-size: 85%;
+        }
+
+        header {
+            height: 100vh;
+        }
+
+        li {
+            padding: 1rem 1.1rem;
+        }
+
+        .menu {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        ul {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            top: 4rem;
+            left: -50%;
+            background-color: #000000b5;
+            backdrop-filter: blur(10px);
+        }
+
+        #click:checked~ul {
+            left: 0%;
+            transition: all 0.3s ease;
+        }
+
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="CX-Loyalty_img.png" alt="image">
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="overview.html" class="active">Home</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="who_will_you_meet.html">Who Will You Meet?</a></li>
+                <li><a href="target_industries.html">Target Industries</a></li>
+                <li><a href="why_attend.html">Why Attend?</a></li>
+                <li><a href="top_highlights.html">Topic Highlights</a></li>
+                <li><a href="why_sponsor.html">Why Sponsor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-1">
+      <h1>TARGET INDUSTRIES</h1>
+    <p>BSI<br><br>
+        <i class="fa-solid fa-building-columns"></p></i><br><br>
+    <p>RETAIL & E-COMMERCE<br><br>
+        <i class="fa-solid fa-dumpster-fire"></i></p>
+    <p>TELECOMMUNICATION<br><br>
+        <i class="fa-solid fa-tower-cell"></i></p>
+    <p>HOSPITALITY<br><br>
+        <i class="fa-solid fa-bell-concierge"></i></p>
+    <p>TRAVEL & TOURISM<br><br>
+    <i class="fa-solid fa-plane"></i></p>
+    <p>AVIATION<br><br>
+    <i class="fa-solid fa-carrot"></i></p>
+    <p>FMCG & CPG</p><br><br
+    </div>
+</body>
+</html>
